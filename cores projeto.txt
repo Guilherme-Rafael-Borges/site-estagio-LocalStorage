@@ -1,0 +1,8 @@
+#F8F8F8 - branco fundo
+
+#FFFFFF - branco normal
+
+#6C63FD - azul da logo
+
+#2F2E41 - preto/azul inspiração
+

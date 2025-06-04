@@ -1,0 +1,895 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap");
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: "Quicksand";
+}
+
+#barra-lateral {
+  height: 100vh;
+  background-color: #6c63fd;
+  padding-top: 20px;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+}
+
+#barra-lateral .navbar-brand {
+  color: #ffffff;
+  text-align: center;
+}
+
+#barra-lateral .navbar-brand img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  display: block;
+}
+
+#barra-lateral .nav-link {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#barra-lateral .btn-custom {
+  color: #6c63fd;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  transition: 0.7s all;
+  border-radius: 20px;
+  cursor: inherit;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+}
+
+#barra-lateral li .bi-arrow-down {
+  font-size: 95px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#barra-lateral li .bi-arrow-return-right {
+  font-size: 95px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  left: 30px;
+}
+
+#barra-lateral li .icone {
+  text-align: center;
+}
+
+/* Conteúdo principal */
+#main-content {
+  margin-left: 15%;
+  padding: 20px;
+  width: 85%;
+}
+
+#main-content .card {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#main-content .card a {
+  color: #6c63fd;
+}
+
+#main-content h1 {
+  color: black;
+  font-weight: 900;
+  padding: 0px;
+  font-size: 40px;
+  position: relative;
+  top: 10px;
+}
+
+#main-content .card-text a {
+  color: #ffffff;
+  background-color: #6c63fd;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#main-content .card-text a:hover {
+  color: #6c63fd;
+  background-color: #ffffff;
+  transition: 0.7s all;
+  border: 2px solid #6c63fd;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.pagination {
+  position: relative;
+  top: 10px;
+}
+
+.texto-escuro{
+  font-weight: 900;
+}
+
+.subtitulo-empresa{
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1000px) {
+  #barra-lateral {
+    width: 100%; /* A barra lateral ocupa toda a largura da tela */
+    height: auto; /* Permite que a barra lateral cresça conforme necessário */
+    position: relative; /* Altera a posição para relativa */
+    padding-bottom: 40px; /* Adiciona um espaço no final da barra lateral */
+  }
+
+  #main-content {
+    margin-left: 0; /* Remove a margem esquerda */
+    width: 100%; /* O conteúdo principal ocupa toda a largura da tela */
+    padding: 10px; /* Adiciona um pouco de preenchimento */
+  }
+
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  #main-content h1{
+    font-size: 30px;
+  }
+
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    display: block;
+  }
+
+  #barra-lateral .btn-custom {
+    font-size: 14px; /* Reduz o tamanho da fonte dos botões */
+  }
+
+  #barra-lateral li .bi-arrow-down,
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 50px; /* Reduz o tamanho dos ícones */
+  }
+}
+
+@media (width: 1024px) and (height: 600px) {
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+  }
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral li .bi-arrow-down {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: 30px;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+}
+
+@media (width: 414px) and (height: 896px) {
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+  }
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral li .bi-arrow-down {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .pagination{
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+
+
+}
+
+@media (width: 430px) and (height: 932px) {
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+  }
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral li .bi-arrow-down {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .pagination{
+    padding-bottom: 80px;
+    padding-top: 10px;
+  }
+
+
+}
+
+@media (width: 412px) and (height: 915px) {
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+  }
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral li .bi-arrow-down {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .pagination{
+    padding-bottom: 80px;
+    padding-top: 10px;
+  }
+  .pagination{
+    padding-bottom: 100px;
+    padding-top: 10px;
+  }
+
+
+
+
+}
+
+@media (width: 768px) and (height: 1024px) {
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+  }
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral li .bi-arrow-down {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+
+  .pagination{
+    padding-bottom: 200px;
+    padding-top: 10px;
+  }
+
+}
+
+@media (width: 820px) and (height: 1180px) {
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+  }
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral li .bi-arrow-down {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+
+  .pagination{
+    padding-bottom: 350px;
+    padding-top: 10px;
+  }
+
+}
+
+
+
+
+@media (width: 1024px) and (height: 768px) {
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+  }
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral li .bi-arrow-down {
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: 30px;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (width: 1180px) and (height:820px) {
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+  }
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral li .bi-arrow-down {
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: 30px;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+
+@media (width: 1280px) and (height: 800px) {
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+  }
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 10px;
+  }
+  #barra-lateral li .bi-arrow-down {
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 20px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+@media (width: 1024px) and (height: 1366px) {
+ 
+  #barra-lateral li .bi-arrow-down {
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 20px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: 30px;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card{
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .pagination{
+    padding-bottom: 500px;
+    padding-top: 10px;
+  }
+}
+
+@media (width: 1368px) and (height: 912px) {
+ 
+  #barra-lateral li .bi-arrow-down {
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 20px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right:10px;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card{
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .pagination{
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+}
+
+@media (width: 344px) and (height: 882px) {
+ 
+  #barra-lateral li .bi-arrow-down {
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 20px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right:10px;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card{
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .pagination{
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+}
+
+@media (width: 853px) and (height: 1280px) {
+ 
+  #barra-lateral li .bi-arrow-down {
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 20px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .pagination{
+    padding-bottom: 450px;
+    padding-top: 10px;
+  }
+}
+
+@media (width: 412px) and (height: 914px) {
+ 
+  #barra-lateral li .bi-arrow-down {
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #barra-lateral li .bi-arrow-return-right {
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 20px;
+  }
+  #barra-lateral .navbar-brand img {
+    width: 180px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    display: block;
+  }
+  
+  #main-content .card {
+    padding: 0px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  #barra-lateral .btn-custom {
+    color: #6c63fd;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    transition: 0.7s all;
+    border-radius: 20px;
+    cursor: inherit;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+  }
+  .pagination{
+    padding-bottom: 80px;
+    padding-top: 10px;
+  }
+}
